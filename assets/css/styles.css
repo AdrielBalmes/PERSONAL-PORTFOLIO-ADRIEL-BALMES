@@ -8,10 +8,10 @@
 
     /*========== Colors ==========*/
 
-    --hue-color: 348; 
+    --hue-color: 240; 
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 83%, 47%);
+    --first-color: hsl(var(--hue-color), 57%, 51%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -463,16 +463,16 @@ img{
 }
 
 .skills_html{
-    width: 50%;
+    width: 30%;
 }
 .skills_css{
-    width: 40%;
+    width: 20%;
 }
 .skills_js{
-    width: 30%;
+    width: 15%;
 }
 .skills_java{
-    width: 30%;
+    width: 15%;
 }
 
 /* Active Modal */
