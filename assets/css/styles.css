@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 /*==================== VARIABLES CSS ====================*/
@@ -8,7 +8,7 @@
 
     /*========== Colors ==========*/
 
-    --hue-color: 240; 
+    --hue-color: 196; 
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 57%, 51%);
@@ -20,12 +20,12 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
+    --container-color: rgb(27, 48, 245);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
     /*========== Font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Courier Prime', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
@@ -37,7 +37,7 @@
     --smaller-font-size: .75rem;
    
     /*========== Font weight ==========*/
-    --font-medium: 500;
+    --font-medium: 600;
     --font-semi-bold: 600;
 
     /*========== Margenes Bottom ==========*/
@@ -115,7 +115,9 @@ body{
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: var(--body-color);
+    background-color: var(--body-color);  
+    /*background-color: rgb(0, 255, 234);*/
+    /*background: url('../img/dfggdfh.jpg');*/
     color: var(--text-color);
 }
 
@@ -130,6 +132,7 @@ ul{
 
 a{
     text-decoration: none;
+    font: fallback;
 }
 
 img{
@@ -141,21 +144,26 @@ img{
 .section{
     padding: 2rem 0 4 rem;
     margin-top: 2rem;
+
 }
 
 .section_title{
     font-size: var(--h1-font-size);
+    background-color: rgb(9, 241, 183);
 }
 
 .section_subtitle{
     display: block;
-    font-size: var(--small-font-size);
+    font-size: var(--large-font-size);
     margin-bottom: var(--mb-3);
+    background-color: rgb(153, 235, 238);
+    color: #000;
 }
 
 .section_title,
 .section_subtitle{
     text-align: center;
+    font-size: 3; 
 }
 
 /*==================== LAYOUT ====================*/
@@ -186,6 +194,9 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #8ecae6;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .nav_logo,
@@ -274,8 +285,13 @@ img{
 
 .home_content{
     grid-template-columns: .5fr 3fr;
+    background-color: #1f59f8a6;
+    padding: 2rem;
+    border-radius: 10px;
     padding-top: 3.5rem;
     align-items: center;
+    
+    
 }
 
 .home_social{
@@ -389,21 +405,40 @@ img{
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+    
+}
+
+.about_container{
+    background-color:#1f59f8a6;
+    padding: 2rem;
+    border-radius: 10px;
+    row-gap:0;
+    border-radius: 10px;
 }
 
 .about_description{
     text-align: center;
     margin-bottom: var(--mb-2-5);
+    color: #000;
+    font-size: medium;
 }
 
 .about_buttons{
     display: flex;
     justify-content: center;
+    color: cornflowerblue;
+    
 }
 
 /*==================== SKILLS ====================*/
 .skills_container{
+    background-color:#1f59f8a6;
+    padding: 2rem;
+    border-radius:10px;
     row-gap: 0;
+    border-radius: 10px;
+    
+    
 }
 
 .skills_header{
@@ -416,7 +451,9 @@ img{
 .skills_icon,
 .skills_arrow{
     font-size: 2rem;
-    color: var(--first-color);
+   color: #000;
+
+
 }
 
 .skills_icon{
@@ -429,6 +466,7 @@ img{
 .skills_subtitle{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
+    color: #000;
 }
 
 .skills_list{
@@ -440,26 +478,29 @@ img{
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
+    color: #000;
 }
 
 .skills_name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+
 }
 
 .skills_bar,
 .skills_percentage{
     height: 5px;
     border-radius: .25rem;
+    color-scheme:#0106  ;
 }
 
 .skills_bar{
-    background-color: var(--first-color-lighter);
+    background-color: #ffffff;
 }
 
 .skills_percentage{
     display: block;
-    background-color: var(--first-color);
+    background-color: #01060f;
 }
 
 .skills_html{
@@ -482,6 +523,7 @@ img{
 .portfolio_container{
     overflow: initial;
     margin-bottom: var(--mb-3);
+
 }
 
 .portfolio_content{
@@ -572,6 +614,12 @@ p.portfolio_description{
 /*==================== CONTACT ME ====================*/
 .contact_container{
     row-gap: 3rem;
+     background-color: #1f59f8a6;
+    padding: 2rem;
+    border-radius:10px;
+    row-gap: 1;
+
+    
 }
 
 .contact_information{
@@ -581,8 +629,9 @@ p.portfolio_description{
 
 .contact_icon{
     font-size: 2rem;
-    color: var(--first-color);
+    color: #000000;
     margin-right: var(--mb-0-75);
+    color:#000;
 }
 
 .contact_title{
@@ -593,6 +642,7 @@ p.portfolio_description{
 .contact_subtitle{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
+    color: #000;
 }
 
 .contact_content{
@@ -631,40 +681,48 @@ p.portfolio_description{
 }
 
 .footer_container{
-    row-gap: 3.5rem;
+    row-gap: 2rem;
+   
 }
 
 .footer_bg{
-    background-color: var(--first-color-second);
+    background-color:#70a1ff;
     padding: 2rem 0 3rem;
 }
 
 .footer_title{
     font-size: var(--h1-font-size);
     margin-bottom: var(--mb-0-25);
+    
 }
 
 .footer_subtitle{
     font-size: var(--small-font-size);
+    
+    
 }
 
 .footer_links{
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+    color: rgb(0, 4, 250);
 }
 
 .footer_link:hover{
     color: var(--first-color-lighter);
+    color: rgb(0, 4, 250);
 }
 
 .footer_social{
     font-size: 1.25rem;
     margin-right: var(--mb-1-5);
+    color: rgb(0, 4, 250);
 }
 
 .footer_social:hover{
     color: var(--first-color-lighter);
+    color: rgb(0, 4, 250);
 }
 
 .footer_copy{
@@ -672,13 +730,14 @@ p.portfolio_description{
     text-align: center;
     color: var(--text-color-light);
     margin-top: var(--mb-3);
+    color: rgb(2, 0, 0);
 }
 
 .footer_title,
 .footer_subtitle,
 .footer_link,
 .footer_social{
-    color: #fff;
+color: rgb(2, 0, 0);
 }
 
 /*========== SCROLL UP ==========*/
@@ -696,11 +755,12 @@ p.portfolio_description{
 
 .scrolltop:hover{
     background-color: var(--first-color-alt);
+    
 }
 
 .scrolltop_icon{
     font-size: 1.5rem;
-    color: #fff;
+    color: var rgb(12, 0, 0);
 }
 
 /* Show scroll */
@@ -713,6 +773,7 @@ p.portfolio_description{
     width: .60rem;
     background-color: var(--scroll-bar-color);
     border-radius: .5rem;
+    
 }
 
 ::-webkit-scrollbar-thumb{
